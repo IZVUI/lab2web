@@ -1,11 +1,11 @@
 function increase() {
     let num = document.getElementById('number');
-    let toInc = +num.value + 1;
-    num.value = toInc;
+    let toInc = Number(num.innerText) + 1;
+    num.innerText = toInc;
 }
 
 function decrease() {
     let num = document.getElementById('number');
-    let toInc = +num.value - 1;
-    num.value = toInc;
+    let toDec = +num.innerText - 1;
+    num.innerText = toDec;
 }
